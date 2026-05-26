@@ -1,3 +1,6 @@
+@use '../utils/mixins';
+@use '../utils/variables';
+
 .header {
   height: 100vh;
 
@@ -6,11 +9,11 @@
   background-position: center bottom;
   background-size: cover;
 
-  @include on-tablet {
+  @include mixins.on-tablet {
     background-image: url('../images/header-bg-tablet.png');
   }
 
-  @include on-desktop {
+  @include mixins.on-desktop {
     background-image: url('../images/header-bg-desktop.png');
   }
 
@@ -24,7 +27,7 @@
   &__title {
     margin: 0;
 
-    font-family: $font-main;
+    font-family: variables.$font-main;
     font-size: 36px;
     font-weight: 700;
     font-style: bold;
@@ -32,11 +35,11 @@
     text-align: center;
     letter-spacing: -1.5px;
 
-    @include on-tablet {
+    @include mixins.on-tablet {
       font-size: 64px;
     }
 
-    @include on-desktop {
+    @include mixins.on-desktop {
       font-size: 80px;
     }
   }
@@ -44,11 +47,11 @@
   &__bottom {
     padding-bottom: 88px;
 
-    @include on-tablet {
+    @include mixins.on-tablet {
       padding-bottom: 130px;
     }
 
-    @include on-desktop {
+    @include mixins.on-desktop {
       padding-bottom: 203px;
     }
   }

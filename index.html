@@ -1,4 +1,3 @@
-<!-- #region head -->
 <!doctype html>
 <html
   lang="en"
@@ -34,10 +33,7 @@
       rel="stylesheet"
       href="./src/styles/index.scss"
     />
-    <script
-      src="./src/scripts/main.js"
-      defer
-    ></script>
+    <script type="module" src="./src/scripts/main.js"></script>
   </head>
   <!-- #endregion -->
 
@@ -244,7 +240,7 @@
                   >
                     <img
                       class="detail__photo"
-                      src="src/images/detals/Image.png"
+                      src="src/images/details/Image.png"
                       alt="Screenshot"
                     />
                   </a>
@@ -422,11 +418,9 @@
     <!-- #endregion -->
 
     <footer class="footer">
-      <img
-        class="footer__img"
-        src="/src/images/footer.png"
-        alt="footer"
-      />
+      <img class="footer__img"
+        src="./src/images/footer.png"
+        alt="footer" />
     </footer>
     <script>
       document.addEventListener('DOMContentLoaded', () => {

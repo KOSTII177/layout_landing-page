@@ -1,18 +1,20 @@
+@use '../utils/mixins';
+
 .details {
   margin-top: 92px;
 
-  @include on-tablet {
+  @include mixins.on-tablet {
     margin-top: 120px;
   }
 
-  @include on-desktop {
+  @include mixins.on-desktop {
     margin-top: 144px;
   }
   &__wrapper {
     display: grid;
     row-gap: 40px;
 
-    @include on-tablet {
+    @include mixins.on-tablet {
       row-gap: 64px;
     }
   }
@@ -20,11 +22,11 @@
     margin-bottom: 48px;
     text-align: center;
 
-    @include on-tablet {
+    @include mixins.on-tablet {
       margin-bottom: 64px;
     }
 
-    @include on-desktop {
+    @include mixins.on-desktop {
       margin-bottom: 48px;
     }
   }
@@ -33,7 +35,7 @@
 .detail {
   perspective: 1000px;
   &__photos {
-    @include page-grid;
+    @include mixins.page-grid;
   }
   &__photo {
     position: absolute;
@@ -72,11 +74,11 @@
       }
     }
     &--wide {
-      @include on-tablet {
+      @include mixins.on-tablet {
         grid-column: span 4;
       }
 
-      @include on-desktop {
+      @include mixins.on-desktop {
         grid-column: span 8;
       }
     }
@@ -84,11 +86,11 @@
       height: 0;
       padding-bottom: 100%;
 
-      @include on-tablet {
+      @include mixins.on-tablet {
         grid-column: span 2;
       }
 
-      @include on-desktop {
+      @include mixins.on-desktop {
         grid-column: span 4;
       }
     }
@@ -101,11 +103,11 @@
   &__description {
     margin-bottom: 40px;
 
-    @include on-tablet {
+    @include mixins.on-tablet {
       margin-bottom: 48px;
     }
 
-    @include on-desktop {
+    @include mixins.on-desktop {
       margin-bottom: 48px;
     }
   }
@@ -115,12 +117,12 @@
   width: 100%;
   margin-bottom: 80px;
 
-  @include on-tablet {
+  @include mixins.on-tablet {
     max-width: 392px;
     margin-bottom: 120px;
   }
 
-  @include on-desktop {
+  @include mixins.on-desktop {
     max-width: 324px;
     margin-bottom: 180px;
   }

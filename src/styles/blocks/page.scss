@@ -1,12 +1,14 @@
+@use '../utils/variables';
+
 .page {
   scroll-behavior: smooth;
 
   box-sizing: border-box;
 
-  font-family: $font-main;
+  font-family: variables.$font-main;
   font-size: 16px;
   line-height: 140%;
-  color: $main-text-color;
+  color: variables.$main-text-color;
 
   &__body {
     min-width: 320px;
@@ -55,7 +57,7 @@
   border: none;
   border-radius: 40px;
 
-  font-family: $font-main;
+  font-family: variables.$font-main;
   font-size: 16px;
   font-weight: 700;
   color: #222;

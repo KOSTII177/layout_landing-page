@@ -1,3 +1,6 @@
+@use '../utils/mixins';
+@use '../utils/variables';
+
 .icon {
   display: block;
 
@@ -7,9 +10,9 @@
 
   background-size: contain;
 
-  @include hover(transform, scale(1.2));
+  @include mixins.hover(transform, scale(1.2));
 
-  @include on-tablet {
+  @include mixins.on-tablet {
     width: 32px;
     height: 32px;
   }
@@ -24,7 +27,7 @@
 
     min-width: max-content;
 
-    font-family: $font-main;
+    font-family: variables.$font-main;
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;

@@ -1,6 +1,9 @@
+@use '../utils/mixins';
+@use '../utils/variables';
+
 .recommended {
   padding-bottom: 60px;
-  background-color: $color-dark;
+  background-color: variables.$color-dark;
 
   &__title {
     margin-top: 92px;
@@ -9,7 +12,7 @@
   }
 
   &__products {
-    @include page-grid;
+    @include mixins.page-grid;
   }
 
   &__product {
@@ -24,11 +27,11 @@
       transform: scale(1.1);
     }
 
-    @include on-tablet {
+    @include mixins.on-tablet {
       grid-column: 2/6;
     }
 
-    @include on-desktop {
+    @include mixins.on-desktop {
       grid-column: span 4;
     }
 
@@ -52,7 +55,7 @@
     &-price {
       margin-top: 16px;
 
-      font-family: $font-main;
+      font-family: variables.$font-main;
       font-size: 24px;
       font-weight: 700;
       line-height: 1.4;
