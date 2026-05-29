@@ -1,6 +1,4 @@
-@use '../utils/variables';
-
 .main {
   margin: 0;
-  background-color: variables.$color-dark;
+  background-color: $color-dark;
 }

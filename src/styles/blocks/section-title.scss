@@ -1,8 +1,5 @@
-@use '../utils/mixins';
-@use '../utils/variables';
-
 .section-title {
-  font-family: variables.$font-main;
+  font-family: $font-main;
   font-size: 32px;
   font-weight: 500;
   line-height: 1;
@@ -12,11 +9,11 @@
 
   animation: fade-in-up 0.8s ease-out forwards;
 
-  @include mixins.on-tablet {
+  @include on-tablet {
     font-size: 48px;
   }
 
-  @include mixins.on-desktop {
+  @include on-desktop {
     font-size: 64px;
   }
 }
